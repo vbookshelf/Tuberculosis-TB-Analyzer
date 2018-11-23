@@ -10,7 +10,7 @@ Model F1 score: 0.85
 The process used to build and train the model is described in this Kaggle kernel:
 
 
-The dataset used for the training can be found here:
+The dataset used for the training can be found here:<br>
 https://www.kaggle.com/kmader/pulmonary-chest-xray-abnormalities
 
 All javascript, html and css files used to create the web app are available in this repo.
