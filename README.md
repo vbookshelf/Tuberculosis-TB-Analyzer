@@ -1,6 +1,14 @@
 
+## Tuberculosis-TB-Analyzer
+
 
 Live Web App: http://tb.test.woza.work/
+
+<br>
+
+<img src="http://tb.test.woza.work/assets/tb_sample.png" width="350"></img>
+
+<br>
 
 This is a prototype for an online tool that can look at a chest x-ray and tell if a person has Tuberculosis (TB) or not. 
 
