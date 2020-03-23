@@ -6,7 +6,7 @@ Live Web App: http://tb.test.woza.work/
 
 <br>
 
-<img src="http://tb.test.woza.work/assets/tb_sample.png" width="350"></img>
+<img src="http://tb.test.woza.work/assets/app_pic.png" width="350"></img>
 
 <br>
 
