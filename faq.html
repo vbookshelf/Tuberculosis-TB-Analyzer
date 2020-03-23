@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--CSS Stylesheets-->
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/woza.css">
+
+<!--Link to Font Awesome icons-->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+
+
+<!--Link to fonts from google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" type="image/png" href="robotfavicon.png">
+
+</head>
+
+
+
+
+
+
+<body class="bground-color">
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content. -->
+
+<div style="max-width:1500px">
+<!-- 1. HOME PAGE TAB -->
+<div class="w3-animate-opacity w3-padding w3-margin-bottom bground-color">
+	
+
+	
+
+
+<!-- 960 width region -->
+<div class='w3-content w3-padding w3-white' style="max-width:960px">
+	
+
+
+
+<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+	
+	<img class='w3-round' src="assets/robot.jpg" alt="robot" height='200' width='200'>
+	
+</div>
+
+
+<!-- Top Bar -->
+<div class='w3-center'>
+	
+	<p class="space-letters w3-tag bground-color w3-text-teal w3-border w3-round">
+		<a href="index.html"><i class="fa fa-angle-double-left" style="font-size:20px"></i><b> Go back to the future...</b></a>
+</div>
+	
+
+
+
+<div class='bottom-margin'>
+	
+	
+	<!-- Start of block -->
+	<div class='side-margin1 w3-round text-color space-letters 
+	w3-margin-bottom'>
+	
+			<p class='w3-text-pink topp-margin'><b>Design Status</b></p>
+			
+			<p>This is a prototype.</p>
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Purpose</b></p>
+			
+			<p>This web app uses computer vision to detect tuberculosis (TB) on chest x-rays. Today there's still no quick test for TB like there is for Malaria and HIV. This is a step towards creating a test that can quickly identify whether or not a person is infected.</p>
+			
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Image format</b></p>
+			
+			<p>The app accepts images in jpg or png format.</p>
+			
+			
+
+			
+			<p class='w3-text-pink topp-margin'><b>Limitations</b></p>
+			
+			<p>The Ai brain (model) that powers the app was trained using only 800 x-rays. This is a very small dataset by deep learning standards. Therefore, even though the scores during testing are reasonably good, I'm not sure how well this model will perform under real-world conditions.</p>
+			
+			<p>Also, the prediction accuracy could be affected by factors like x-ray machine type, varying image lighting conditions, damaged x-ray images (e.g. pen marks) and other factors.</p>
+			
+
+			<p class='w3-text-pink topp-margin'><b>Published Design</b></p>
+			
+			<p>The design code and the step-by-step process used to train and test the model has been published on Kaggle. You can find the open source notebook <a href="https://www.kaggle.com/vbookshelf/tuberculosis-tb-analyzer-web-app" target='_blank' class="w3-text-blue">here</a>. The test results are also available in the notebook.</p>
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Dataset Licence</b></p>
+			
+			<p>I could not find the explicit licencing conditions for the <a href="https://www.kaggle.com/kmader/pulmonary-chest-xray-abnormalities" target='_blank' class="w3-text-blue">data</a> that was used to train this model. I'm therefore assuming that the data is licenced for non-commercial, academic research and education use only.</p>
+			
+			<hr>
+			
+			
+			
+			
+			<!-- FAQ Section -->
+			
+			
+			<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+	
+			<h1 class="space-letters w3-text-pink"><b>FAQ</b></h1>
+
+			</div>
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>Will I need to wait for the model to download every time I use the app?</b></p>
+			
+			<p>No. Once the model downloads it will be cached in memory. The next time you visit this site you won’t need to wait.</p>
+			
+			<p>That said, I suggest that you always use this tool with your web browser set to incognito mode. The model won’t be saved, but this will ensure that each time you visit this site you will always use the most up to date version of the model and not the old one that's stored in your device's memory.
+			</p>
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>What about patient data privacy?</b></p>
+			
+			<p>Your images are never sent to an external server. Any image you submit stays on your computer or mobile phone. This is because the model is running on your device. This is also why a batch of images can be analyzed in less than two seconds.</p>
+			
+			<p>The tech that makes this possible is called Tensorflow.js. It was created by Google.</p>
+			
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>What do the decimal numbers mean?</b></p>
+			
+			<p>They are probability scores between 0 and 1. They show how confident the model is that a particular condition is present on the image. <br>
+				For example, <i>Tuberculosis: 0.751</i> means that the model is 75% sure that TB is present on the x-ray.</p>
+			
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>How do I use this app on a computer?
+			</b></p>
+			
+			<p>- Go to this site on your computer.<br>
+				- Click the orange button.<br>
+			- Select one image or multiple images and click ‘Open’.<br>
+			- The app will print results for each image.
+			</p>
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>How do I use this app on a mobile phone?
+			</b></p>
+			
+			<p>You can take a new photo or you can submit photos that are stored on your phone. The steps below apply to Android. iOS may be similar but I'm not sure.</p>
+			
+			<p class="w3-text-pink"><b>[ 1 ] Take a photo</b></p>
+			<p>- Go to this site on your phone.<br>
+			- Tap the orange button.<br>
+			- Select “Camera”<br>
+			- Take a photo<br>
+			- Tap the "tick"<br>
+			- The photo will be sent to the app for analysis.
+			</p>
+			
+			
+			<p class="w3-text-pink"><b>[ 2 ] Use images from your photo folder</b></p>
+			<p>- Go to this site on your phone.<br>
+				- Tap the orange button.<br>
+				- Tap "Files"<br>
+				- Tap the image name<br>
+				- To submit a batch of images, tap each image (tick) to select it and then tap "Open". 
+			</p>
+			
+			
+			
+				
+			<p class='w3-text-black topp-margin'><b> What would it take to make this tool more trustworthy?</b></p>
+			
+			<p>Two things are needed - more high quality labeled training data and field testing.</p>
+			
+		
+				
+				
+				
+			<p class='w3-text-black topp-margin'><b>Where can I send feedback or report bugs?</b></p>
+			
+			<p>Please feel free to email your thoughts or ideas to:<br>
+				<span class="w3-text-pink"><b>contact -at- woza -dot- work</b></span></p>
+				
+				
+			
+			
+			
+		
+	</div>
+	<!-- End of block -->
+	
+</div>
+
+
+
+
+
+</div><!-- End of 960 width region -->
+
+<!-- Bottom Bar -->
+<div class='w3-center w3-margin-top'>
+<p class="space-letters"><a class="w3-small w3-hover-text-deep-orange text-color" href="https://woza.work/">
+		<b>woza.work</b></a>
+	</p>
+</div>
+
+
+
+</div><!--END OF HOME PAGE TAB-->
+</div> <!-- w3-content -->
+</body>
+</html>
+
